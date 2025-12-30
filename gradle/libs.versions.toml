@@ -1,0 +1,27 @@
+[versions]
+ktor = "3.0.0" # Укажите вашу версию Ktor
+kotlin = "2.1.0" # версия Kotlin (обычно совпадает с плагином)
+logback = "1.5.6"
+exposed = "0.50.0"
+postgresql = "42.7.3"
+
+
+[libraries]
+# Ktor модули
+ktor-server-status-pages = { module = "io.ktor:ktor-server-status-pages", version.ref = "ktor" }
+ktor-server-core = { module = "io.ktor:ktor-server-core", version.ref = "ktor" }
+ktor-server-netty = { module = "io.ktor:ktor-server-netty", version.ref = "ktor" }
+
+# Логирование
+logback-classic = { module = "ch.qos.logback:logback-classic", version.ref = "logback" }
+
+ktor-server-config-yaml = { module = "io.ktor:ktor-server-config-yaml", version.ref = "ktor" }
+
+# Тестирование
+kotlin-test-junit5 = { module = "org.jetbrains.kotlin:kotlin-test-junit5", version.ref = "kotlin" }
+ktor-server-test-host = { module = "io.ktor:ktor-server-test-host", version.ref = "ktor" }
+
+
+# База данных
+#exposed-core = { module = "org.jetbrains.exposed:exposed-core", version.ref = "exposed" }
+#postgresql = { module = "org.postgresql:postgresql", version.ref = "postgresql" }
